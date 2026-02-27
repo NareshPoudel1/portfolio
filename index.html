@@ -1,611 +1,439 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naresh Poudel | .NET Developer & AI Enthusiast</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Naresh Poudel</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="scss/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-bracket">&lt;</span>NP<span class="logo-bracket">/&gt;</span>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#interests" class="nav-link">Interests</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+   
+    <nav  style="text-align:right;padding:9px; background-color: #232525e5; position:fixed; width:100%; z-index: 100; ">
+       <a style="color: aliceblue;" href="#lead" id="text">Home &nbsp;</a>
+          <a style="color: aliceblue;" href = "#about" id="text">About &nbsp;</a>
+        <a style="color: aliceblue;"href="#experience" id="text">Experience &nbsp;</a>
+        <a style="color: aliceblue;" href="#education" id="text">Education &nbsp;</a>
+        <a style="color: aliceblue;" href="#certifications" id="text">Certifications &nbsp;</a>
+        <a style="color: aliceblue;" href="#projects" id="text">Projects &nbsp;</a>
+        <a style="color: aliceblue;" href="#skills" id="text">Skills&nbsp;</a>
+        <a style="color: aliceblue;" href="#contact" id="text">Contact&nbsp;</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-greeting">Hello, I'm</div>
-                <h1 class="hero-title">Naresh Poudel</h1>
-                <div class="hero-subtitle">
-                    <span class="typing-text"></span><span class="cursor">|</span>
+        <div id="lead-overlay"></div>
+
+
+    <div id="lead">
+        <div id="lead-content">
+            <img src="images\dummyprofil.jpg" style="height: 250px; width: 250px; border-radius: 50%; margin-bottom: 40px; margin-top: 10rem;"/>
+            <h1 style="font-size: 3em; font-weight: 900; text-transform: uppercase;  letter-spacing: 0.05em;   line-height: 0.9em;">Naresh Poudel</h1>
+            <h2 class="job">Data Science | Machine Learning Aficionado</h2>
+            <a href="images/naresh_resume.pdf" target="_blank"
+                class="btn-rounded-white">View Resume</a>
+
+                <a href="https://www.linkedin.com/in/naresh-poudel-b7417218a/" target="_blank"
+                class="btn-rounded-white">Visit LinkedIn</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+    </div>
+    <!-- End #lead -->
+
+    <div id="about" style="background-color: #c5c3a379;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
                 </div>
-                <p class="hero-description">
-                    Building enterprise-grade applications with .NET technologies while exploring the fascinating world of 
-                    <span class="highlight">Agentic AI</span>. Passionate about creating scalable solutions that make a difference.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-                <div class="hero-social">
-                    <a href="https://github.com/nareshpoudel1" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/nareshpoudel1" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:nareshpoudel126@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
-                </div>
+                <div class="col-md-8">
+                    <p style="color:rgba(0, 0, 0, 0.658)">
+                          
+As a graduate student and aspiring fresher in Computer Science, I've gain handful knowledge in  Python, Git, GitHub, SQL, pandas, and NumPy. I'm currently enhancing my skills in database management systems (DBMS) like MySQL and PostgreSQL, alongside data modeling and ETL processes. Eager to contribute to innovative projects, I'm actively seeking traineeships opportunities to kickstart my career in these dynamic fields.
+
+My proactive approach to learning encompasses continuous skill development in areas vital to the industry, including automation, version control, and data manipulation. With a keen interest in DevOps engineering as well, I am poised to contribute effectively to dynamic teams, leveraging my evolving skill set and unwavering dedication to excellence in pursuit of impactful internship opportunities.
+
+Thank you for taking the time to explore my portfolio. I would be delighted to connect with you soon and discuss how I can contribute to your organization's data-driven success.
             </div>
-            <div class="hero-visual">
-                <div class="code-window">
-                    <div class="code-header">
-                        <div class="code-dot red"></div>
-                        <div class="code-dot yellow"></div>
-                        <div class="code-dot green"></div>
-                        <span class="code-filename">Naresh.cs</span>
-                    </div>
-                    <div class="code-content">
-                        <pre><code><span class="code-keyword">public class</span> <span class="code-class">Developer</span>
-{
-    <span class="code-keyword">public string</span> Name => <span class="code-string">"Naresh Poudel"</span>;
-    <span class="code-keyword">public string</span> Role => <span class="code-string">".NET Developer"</span>;
-    <span class="code-keyword">public string</span> Passion => <span class="code-string">"Agentic AI"</span>;
-    <span class="code-keyword">public string</span>[] Interests => 
-        <span class="code-keyword">new</span>[] { <span class="code-string">"Cricket"</span>, <span class="code-string">"Football"</span>, <span class="code-string">"Reading"</span> };
+        </div>
+    </div>
+    <!-- End #about -->
+
+<!--     <div id="experience" class="background-alt" style ="background-color: #92f0f027;">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+ 
+            
+            <div data-date="January 2023 - Present" style ="background-color: #85d1d12d;">
+                <h3>My Intern</h3>
+                <h4>Name 
+                <br>Company Name    &nbsp; &nbsp; Location here</h4>
+                <p style="color:rgba(0, 0, 0, 0.692)">
+
+             can write sth also here<br><br> 
+
+               
+                 <br><ul style="font-size: 0.9em; background-color: #d4bfa90d; color:rgba(0, 0, 0, 0.692)">
+
+                  <li>Write here sth about job/intern</li>
+                 <li>Write here sth about job/intern</li>
+                 <li>Write here sth about job/intern</li>
+                 <li>Write here sth about job/intern</li> 
+             
+                    
+                   </ul>
+                </p> 
+            </div> -->
+       
+        </div>
+    </div> 
+    <!-- End #experience -->
+  
+
+         <div id="education" style="background-color: #fff5ebaf;">
+        <h2 class="heading">Education</h2>
+        <div class="education-block" style="background-color:rgba(238, 230, 215, 0.315);">
+            <h3>Tribhuvan University(Kathdmandu Bernhardt College),&nbsp; &nbsp;Kathmandu, Nepal</h3>
+            <span class="education-date">(Expected Graduation: [Sep/Oct, 2023]) </span>
+            <h4>Bachelor in Computer Science and Information Technology</h4>
+            
+                Semester I
+                <br>
+                SN    Course Code    Course Title                           Credit Hrs.    Full Marks
+                <br>
+                1     CSC109         Introduction to Information Technology   3              100
+                <br>
+                2     CSC110         C Programming                            3              100
+                <br>
+                3     CSC111         Digital Logic                            3              100
+                <br>
+                4     MTH112         Mathematics I                            3              100
+                <br>
+                5     PHY113         Physics                                  3              100
+                <br>
+                Total                                                         15             500
+                <br><br>
+                Semester II
+                <br>
+                SN    Course Code    Course Title                   Credit Hrs.    Full Marks
+                <br>
+                1     CSC160         Discrete Structure                3              100
+                <br>
+                2     CSC161         Object-Oriented Programming       3              100
+                <br>
+                3     CSC162         Microprocessor                    3              100
+                <br>
+                4     MTH163         Mathematics II                    3              100
+                <br>
+                5     STA164         Statistics I                      3              100
+                <br>
+                Total                                                  15             500
+                <br><br>	                                           
+            
+                
+        Semester III
+        <br>
+        SN    Course Code    Course Title                   Credit Hrs.    Full Marks
+        <br>
+        1     CSC206         Data Structure and Algorithm      3              100
+        <br>
+        2     CSC207         Numerical Method                  3              100
+        <br>
+        3     CSC208         Computer Architecture             3              100
+        <br>
+        4     CSC209         Computer Graphics                 3              100
+        <br>
+        5     STA210         Statistics II                     3              100
+        <br>
+        Total                                                  15             500
+        <br><br>
+        Semester IV
+        <br>
+        SN    Course Code    Course Title                 Credit Hrs.    Full Marks
+        <br>
+        1     CSC257         Theory of Computation           3              100
+        <br>
+        2     CSC258         Computer Networks               3              100
+        <br>
+        3     CSC259         Operating Systems               3              100
+        <br>
+        4     CSC260         Database Management System      3              100
+        <br>
+        5     CSC261         Artificial Intelligence         3              100
+        <br>
+        Total                                               15              500
+        <br><br>
+        Semester V
+        <br>
+        SN    Course Code    Course Title                          Credit Hrs.    Full Marks
+        <br>
+        1     CSC314         Design and Analysis of Algorithms      3               100
+        <br>
+        2     CSC315         System Analysis and Design             3               100
+        <br>
+        3     CSC316         Cryptography                            3               100
+        <br>
+        4     CSC317         Simulation and Modeling                 3               100
+        <br>
+        5     CSC318         Web Technology                          3               100
+        <br>
+        6     CSC321         Image Processing                        3               100
+        <br>
+        Total                                                        18              600
+        <br><br>
+        Semester VI
+        <br>
+        SN    Course Code    Course Title                         Credit Hrs.    Full Marks
+        <br>
+        1     CSC364         Software Engineering                    3              100
+        <br>
+        2     CSC365         Compiler Design and Construction        3              100
+        <br>
+        3     CSC366         E-Governance                            3              100
+        <br>
+        4     CSC367         NET Centric Computing                   3              100
+        <br>
+        5     CSC368         Technical Writing                       3              100
+        <br>
+        6     CSC370         E-Commerce                              3              100
+        <br>
+        Total                                                        18             600
+        <br><br>
+        Semester VII
+        <br>
+        SN    CourseCode    Course Title                          Credit Hrs.    Full Marks
+        <br>
+        1     CSC409        Advanced Java Programming                3              100
+        <br>
+        2     CSC410        Data Warehousing and Data Mining         3              100
+        <br>
+        3     CSC411        Principles of Management                 3              100
+        <br>
+        4     CSC412        Project Work                             3              100
+        <br>
+        5     CSC415        Software Project Management              3              100
+        <br>
+        Total                                                       15              500
+        <br><br>
+        
+        Semester VIII
+        <br>
+        SN    CourseCode    Course Title                          Credit Hrs.    Full Marks
+        <br>
+        1     CSC461        Advanced Database                      3              100
+        <br>
+        2     CSC462        Internship                             6              200
+        <br>
+        3     CSC467        Introduction to Cloud Computing        3              100
+        <br>
+        4     CSC463        Advanced Networking with IPV6          3              100
+        <br>
+        Total                                                      15             500
+                         
+                                               
+       
+        </div>
+        <!-- End .education-block -->
+
+         </div>
+    <!-- End #education -->
+
+
+
+    <div id="certifications" style="background-color: #8bb9400c;">
+        <h2 class="heading">Certifications</h2>
+        <div class="education-block" style="background-color: #bce7bc2d;">
+            
+            <h4>Data Science Orientation &nbsp;&nbsp;&nbsp;<a href="images\DataScience.pdf" target="_blank"
+                class="btn-rounded-blue"> View Certificate<font-size:10px;></a></h4>
+            
+            <h4>Machine Learning with Python &nbsp;&nbsp;&nbsp;<a href="images\MachineLearningwithPython_Badge.pdf" target="_blank"
+                class="btn-rounded-blue"> View Certificate<font-size:10px;></a></h4>
+            
+            <h4>Introduction to Machine Learning in Production &nbsp;&nbsp;&nbsp;<a href="images\MLops.pdf" target="_blank"
+                class="btn-rounded-blue"> View Certificate<font-size:10px;></a></h4>    
     
-    <span class="code-keyword">public void</span> <span class="code-method">BuildAwesomeThings</span>()
-    {
-        <span class="code-comment">// Always learning, always growing</span>
-        <span class="code-keyword">while</span> (<span class="code-keyword">true</span>)
-        {
-            Learn();
-            Code();
-            Innovate();
-        }
-    }
-}</code></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <p>Scroll to explore</p>
-        </div>
-    </section>
+            
 
-    <!-- About Section -->
-    <section id="about" class="about">
+        
+
+
+        </div>
+        <!-- End .education-block -->
+
+    </div>
+    <!-- End #education -->
+
+
+<!--     <div id="projects" class="background-alt" style="background-color: #beb4aa4a;">
+        <h2 class="heading">Projects</h2>
+        <div class="container" style="background-color: #f8d1a910;">
+            <div class = ""></div>
+                <div class="project shadow-large" >
+                    <div class="project-image">
+                        <img src="My project image goes here" />
+                    </div>
+                    <! End .project-image -->
+                    <!-- <div class="project-info">
+                        <h3>Project Heading</h3>
+                        <p>
+                           Data science is an interdisciplinary field that combines scientific methods, algorithms, and systems to extract insights and knowledge from structured and unstructured data. It involves the application of statistics, mathematics, and programming skills to analyze and interpret large datasets. Data scientists utilize various techniques such as data mining, machine learning, and predictive modeling to uncover patterns, make predictions, and solve complex problems.
+                        </p>  
+                        <a href="image goes here"target="_blank" class="view-project">View Project</a>
+     
+                    </div> -->
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+
+
+                 <!-- <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="image goes heres" />
+                    </div>
+                    // End .project-image 
+                    <div class="project-info">
+                        <h3>Title</h3>
+                        <p>
+                            Paragraph
+
+                        </p>
+                        <a href="image"target="_blank" >View Project </a>
+                    </div> 
+                    //End .project-info
+                </div> -->
+                <!-- End .project -->
+
+                <!-- <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="image" />
+                    </div> -->
+                    <!-- End .project-image -->
+                    <!-- <div class="project-info">
+                        <h3>Title</h3>
+
+                        <p>
+                           Description
+                        </p>
+                        
+                        <a href="image"target="_blank">View Project</a>
+                    </div> -->
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+
+                <!-- <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="image" />
+                    </div> -->
+                    <!-- End .project-image -->
+                    <!-- <div class="project-info">
+                        <h3>Title</h3>   
+                        <p>
+                            synopsis
+                        </p>
+                        <a href="image" target="_blank" >View Project </a>
+                    </div> -->
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div> 
+    <!-- End #projects -->
+
+
+
+
+
+    
+
+
+    <div id="skills" style="background-color: #a9b86717;">
+        <h2 class="heading">Skills and Tools</h2>
+        <ul style="background-color: #d4bfa90d;">
+             <li>Python, Java, C#, C, PowerShell</li>
+            <li>.NET frameworks</li>
+            <li>SQL, SQLite</li>
+            <li>PHP</li>
+            <li>Data Visualization: Matplotlib, Seaborn, Tableau</li>
+            <li>Exploratory Data Analysis (EDA)</li>
+            <li>Linux</li>
+            <li>Jupyter Notebook</li>
+            <li>Strong understanding of statistics and mathematics</li>
+            <li>Experience in data manipulation and analysis</li>
+            <li>Familiarity with various machine learning algorithms: Linear Regression, Naive Bayes, K Nearest Neighbors, Decision Trees, K-Means              Clustering, DBSCAN</li>
+            <li>Data Wrangling and SQL</li>
+            <li>Continuous Learning: Commitment to continuous learning and staying updated</li>
+            <li>Strong problem-solving skills</li>
+            
+    
+
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact" style="background-color: #6484c3e7;">
+        <h2>Please leave me a message!</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/f/xeqwyjzo"  method="POST">
+               
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+
+                <textarea name="message" placeholder="Your name and message for me" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">About Me</span>
-                <h2 class="section-title">Who I Am</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-content">
-                    <p class="about-text">
-                        I'm a <strong>.NET Software Developer</strong> with hands-on experience in designing and delivering 
-                        enterprise-level applications. I specialize in building modular, scalable systems using .NET technologies, 
-                        with a strong focus on Clean Architecture and design patterns.
-                    </p>
-                    <p class="about-text">
-                        Currently, I'm working at <strong>Fone Insurance</strong> where I've developed end-to-end insurance 
-                        management systems handling everything from proposals to maturity processing. I'm passionate about 
-                        optimizing database performance and implementing complex business logic.
-                    </p>
-                    <p class="about-text">
-                        Beyond coding, I'm deeply interested in the future of <strong>Artificial Intelligence</strong>, 
-                        particularly <strong>Agentic AI</strong>. I'm actively exploring this field and planning to pursue 
-                        a Master's degree to dive deeper into AI's potential to transform how we build and interact with software.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">20+</span>
-                            <span class="stat-label">Modules Built</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">3</span>
-                            <span class="stat-label">Major Projects</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-cards">
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="info-content">
-                            <h4>Location</h4>
-                            <p>Kathmandu, Nepal</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <div class="info-content">
-                            <h4>Education</h4>
-                            <p>BSc. CSIT<br>Kathmandu BernHardt College</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-briefcase"></i></div>
-                        <div class="info-content">
-                            <h4>Current Role</h4>
-                            <p>.NET Developer<br>Fone Insurance</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-rocket"></i></div>
-                        <div class="info-content">
-                            <h4>Goal</h4>
-                            <p>Master's in<br>Agentic AI</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">My Expertise</span>
-                <h2 class="section-title">Technical Skills</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-header">
-                        <i class="fas fa-server"></i>
-                        <h3>Backend Development</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">.NET 8</span>
-                        <span class="skill-tag">.NET Core</span>
-                        <span class="skill-tag">ASP.NET MVC</span>
-                        <span class="skill-tag">Web API</span>
-                        <span class="skill-tag">Identity</span>
-                        <span class="skill-tag">RBAC</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-header">
-                        <i class="fas fa-database"></i>
-                        <h3>Database & ORM</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SQL Server</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">EF Core</span>
-                        <span class="skill-tag">Dapper</span>
-                        <span class="skill-tag">T-SQL</span>
-                        <span class="skill-tag">LINQ</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Frontend Development</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">jQuery</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">Chart.js</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-header">
-                        <i class="fas fa-file-pdf"></i>
-                        <h3>Reporting & Documents</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">QuestPDF</span>
-                        <span class="skill-tag">PDFsharp</span>
-                        <span class="skill-tag">PuppeteerSharp</span>
-                        <span class="skill-tag">EPPlus</span>
-                        <span class="skill-tag">NPOI</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-header">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Security</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">2FA</span>
-                        <span class="skill-tag">Data Encryption</span>
-                        <span class="skill-tag">Input Sanitization</span>
-                        <span class="skill-tag">QR Code</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-header">
-                        <i class="fas fa-layer-group"></i>
-                        <h3>Architecture & Patterns</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Clean Architecture</span>
-                        <span class="skill-tag">Repository Pattern</span>
-                        <span class="skill-tag">Unit of Work</span>
-                        <span class="skill-tag">SOLID</span>
-                        <span class="skill-tag">Modular Monolith</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Career Path</span>
-                <h2 class="section-title">Professional Experience</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>.NET Developer</h3>
-                            <span class="timeline-company">Fone Insurance</span>
-                            <span class="timeline-date">2024 - Present</span>
-                        </div>
-                        <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Lalitpur, Nepal</p>
-                        <ul class="timeline-achievements">
-                            <li>Developed enterprise-grade applications using .NET 8 with modular architecture (20+ domain-specific modules)</li>
-                            <li>Implemented ASP.NET Core Identity with role-based access control and 2FA authentication</li>
-                            <li>Built dynamic reporting engine using QuestPDF, EPPlus, and PuppeteerSharp</li>
-                            <li>Designed and optimized T-SQL stored procedures and complex queries in MS SQL Server and PostgreSQL</li>
-                            <li>Delivered projects through complete SDLC phases from requirements to deployment</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Portfolio</span>
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Insurance Management System</h3>
-                    <p class="project-description">
-                        Enterprise-grade insurance platform handling proposal, KYC, underwriting, issuance, renewals, 
-                        rebates, and maturity processing with 20+ modular components.
-                    </p>
-                    <div class="project-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>20+ modular architecture</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>2FA & QR code integration</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Dynamic PDF/Excel reports</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span>.NET 8</span>
-                        <span>EF Core 8</span>
-                        <span>SQL Server</span>
-                        <span>QuestPDF</span>
-                        <span>Chart.js</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Content Management System</h3>
-                    <p class="project-description">
-                        Scalable CMS admin dashboard for mobile wallet application using Clean Architecture principles 
-                        with comprehensive reporting and analytics.
-                    </p>
-                    <div class="project-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Clean Architecture</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Real-time metrics</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Bulk data operations</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span>.NET 6</span>
-                        <span>PostgreSQL</span>
-                        <span>EPPlus</span>
-                        <span>Dapper</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-headset"></i></div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">EsewaCare Application</h3>
-                    <p class="project-description">
-                        Customer care platform with clear separation of concerns using Clean Architecture, 
-                        implementing Repository and Unit of Work patterns.
-                    </p>
-                    <div class="project-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Layered architecture</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Dapper optimization</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>DI throughout</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span>.NET 6</span>
-                        <span>Dapper</span>
-                        <span>SQL Server</span>
-                        <span>AutoMapper</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Interests Section -->
-    <section id="interests" class="interests">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Beyond Coding</span>
-                <h2 class="section-title">My Interests & Passions</h2>
-            </div>
-            <div class="interests-grid">
-                <div class="interest-card" data-interest="ai">
-                    <div class="interest-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>Agentic AI</h3>
+            <div class="row">
+                <div class="col-sm-5 copyright">
                     <p>
-                        Fascinated by autonomous AI agents and their potential to revolutionize software development. 
-                        Planning to pursue a Master's degree to explore this cutting-edge field.
+                        Copyright &copy; <span id="2022"></span>nareshpoudel
                     </p>
-                    <div class="interest-tags">
-                        <span>Machine Learning</span>
-                        <span>Autonomous Agents</span>
-                        <span>Future Tech</span>
-                    </div>
                 </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/naresh-poudel-b7417218a/" target="_blank"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                                    
+                        </li>
+                    
 
-                <div class="interest-card" data-interest="cricket">
-                    <div class="interest-icon">
-                        <i class="fas fa-cricket"></i>
-                    </div>
-                    <h3>Cricket</h3>
-                    <p>
-                        Passionate about cricket - both watching and playing. Love the strategy, teamwork, 
-                        and the thrill of the game. Always up for a good match!
-                    </p>
-                    <div class="interest-tags">
-                        <span>Team Sports</span>
-                        <span>Strategy</span>
-                        <span>Competition</span>
-                    </div>
+                    </ul>
                 </div>
-
-                <div class="interest-card" data-interest="football">
-                    <div class="interest-icon">
-                        <i class="fas fa-futbol"></i>
-                    </div>
-                    <h3>Football</h3>
-                    <p>
-                        Football enthusiast who enjoys the beautiful game. Whether it's Premier League matches 
-                        or local games, I never miss a chance to watch or play.
-                    </p>
-                    <div class="interest-tags">
-                        <span>World Cup</span>
-                        <span>Premier League</span>
-                        <span>Fitness</span>
-                    </div>
-                </div>
-
-                <div class="interest-card" data-interest="reading">
-                    <div class="interest-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <h3>Reading</h3>
-                    <p>
-                        Avid reader who loves exploring new ideas through books. From technical literature 
-                        to fiction, reading helps me grow both personally and professionally.
-                    </p>
-                    <div class="interest-tags">
-                        <span>Tech Books</span>
-                        <span>Self-Improvement</span>
-                        <span>Fiction</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ai-focus">
-                <div class="ai-content">
-                    <div class="ai-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>My AI Journey</h3>
-                    <p>
-                        I'm deeply passionate about the emerging field of <strong>Agentic AI</strong> - AI systems that can 
-                        autonomously plan, reason, and execute tasks. I believe this technology will fundamentally change 
-                        how we build software and solve complex problems.
-                    </p>
-                    <p>
-                        Currently exploring AI frameworks, running AI experiments, and understanding the market needs. 
-                        My goal is to contribute to this exciting field through advanced education and hands-on projects.
-                    </p>
-                    <div class="ai-goals">
-                        <div class="goal-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Master's in Agentic AI</span>
-                        </div>
-                        <div class="goal-item">
-                            <i class="fas fa-flask"></i>
-                            <span>AI Experimentation</span>
-                        </div>
-                        <div class="goal-item">
-                            <i class="fas fa-lightbulb"></i>
-                            <span>Innovation & Research</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Get In Touch</span>
-                <h2 class="section-title">Let's Connect</h2>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Let's Build Something Amazing Together</h3>
-                    <p>
-                        I'm always open to discussing new projects, opportunities in AI and .NET development, 
-                        or just having a conversation about technology, cricket, or books!
-                    </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div class="contact-text">
-                                <span class="contact-label">Email</span>
-                                <a href="mailto:nareshpoudel126@gmail.com">nareshpoudel126@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                            <div class="contact-text">
-                                <span class="contact-label">Phone</span>
-                                <a href="tel:+9779869693415">(+977) 9869693415</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="contact-text">
-                                <span class="contact-label">Location</span>
-                                <span>Kathmandu, Nepal</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="https://github.com/nareshpoudel1" target="_blank" class="social-btn">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nareshpoudel1" target="_blank" class="social-btn">
-                            <i class="fab fa-linkedin-in"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-bracket">&lt;</span>NP<span class="logo-bracket">/&gt;</span>
-                    <p>Building the future with code and AI</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Naresh Poudel. All rights reserved.</p>
-                <p class="footer-made">Made with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i></p>
             </div>
         </div>
     </footer>
+    <!-- End footer -->
 
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>

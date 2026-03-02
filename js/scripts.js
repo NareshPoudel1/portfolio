@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingElement = document.getElementById('typingText');
     const titles = [
         'Software Developer',
-        '.NET Core Specialist',
+        '.NET Core Developer',
         'ASP.NET Core MVC & Web API',
-        'Clean Architecture Advocate',
+        'Clean Architecture Enthusiast',
         'SQL Server Developer'
     ];
     let titleIndex = 0;
